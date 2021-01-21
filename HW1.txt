@@ -1,0 +1,82 @@
+1. PADOVAN SEQUENCE
+; SLIME 2.24; compiling (DEFUN PAD ...)
+CL-USER> (PAD 0)
+1
+CL-USER> (PAD 1)
+1
+CL-USER> (PAD 2)
+1
+CL-USER> (PAD 3)
+2
+CL-USER> (PAD 4)
+2
+CL-USER> (PAD 5)
+3
+CL-USER> (PAD 6)
+4
+CL-USER> (PAD 7)
+5
+CL-USER> (PAD 8)
+7
+CL-USER> (PAD 9)
+9
+CL-USER> (PAD 10)
+12
+CL-USER> (PAD 50)
+922111
+CL-USER> (PAD 1000)
+*its been 15 minutes, its still running*
+
+For larger numbers such as 1000 the time taken of the the rucursive calculations to run is exponentially higher.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. LISP Code to calculate the number of summations taken for the Padovan sequence
+
+WARNING: redefining COMMON-LISP-USER::SUMS in DEFUN
+
+CL-USER> (SUMS 0)
+0
+CL-USER> (SUMS 1)
+0
+CL-USER> (SUMS 2)
+0
+CL-USER> (SUMS 3)
+1
+CL-USER> (SUMS 4)
+1
+CL-USER> (SUMS 5)
+2
+CL-USER> (SUMS 6)
+3
+CL-USER> (SUMS 7)
+4
+CL-USER> (SUMS 8)
+6
+CL-USER> (SUMS 9)
+8
+CL-USER> (SUMS 10)
+11
+CL-USER> (SUMS 50)
+922110
+
+The relationship between the Padovan Sequence anf the SUMS is that the number of additions or recursions is always 1 less than the padovan sequence.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. 
+; SLIME 2.24; compiling (DEFUN ANON ...)
+CL-USER> (ANON '42)
+?
+CL-USER> (ANON 'FOO)
+?
+CL-USER> (ANON '(((L E) F) T))
+(((? ?) ?) ?)
+CL-USER> (ANON '(5 FOO 3.1 -0.2))
+(? ? ? ?)
+CL-USER> (ANON '(1 (FOO 3.1) -0.2))
+(? (? ?) ?)
+CL-USER> (ANON '(((1 2) (FOO 3.1)) (BAR -0.2)))
+(((? ?) (? ?)) (? ?))
+CL-USER> (ANON '(R (I (G (H t)))))
+(? (? (? (? ?))))
+CL-USER> 

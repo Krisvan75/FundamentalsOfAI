@@ -1,0 +1,18 @@
+Problem 1
+output:
+
+; SLIME 2.24; compiling (DEFUN BFS ...)
+CL-USER> (BFS '(ROOT))
+
+(ROOT)
+CL-USER> (BFS '((((L E) F) T)))
+(T F L E)
+CL-USER> (BFS '((R (I (G (H T))))))
+(R I G H T)
+CL-USER> (BFS '(((A (B)) C (D))))
+(C A D B)
+CL-USER> (BFS '((T (H R E) E)))
+(T E H R E)
+CL-USER> (BFS '((A ((C ((E) D)) B))))
+(A B C D E)
+CL-USER> 
